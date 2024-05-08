@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <header>
+    <div class="nav">
+        <i class="fa-solid fa-bag-shopping" style="color: #f0f4f4;"></i>
+      <a href="#" class="logo">
+      SHOP NOW
+      </a>
+      <input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
+      
+      <div class="box">
+        <div class="cart-count">0</div>
+        <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+      </div>
+
+      <div class="cart">
+        <div class="cart-title">Cart Items</div>
+        <div class="cart-content">
+        </div>
+        
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">Rs.0</div>
+        </div>
+  
+        <button class="btn-buy">Place Order</button>
+  
+        <ion-icon name="close" id="cart-close"></ion-icon>
+  
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <h2 class="title">If you love it Then buy it!!</h2>
+      <div class="shop-content">
+  
+  
+        <div class="food-box">
+          <div class="pic">
+            <img src="./sofa.jpg" class="food-img">
+          </div>
+          <h2 class="food-title">Home Furniture Sofa</h2>
+          <span class="food-price">Rs.28000.00 INR</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+  
+  
+        <div class="food-box">
+          <div class="pic"><img src="./fridge.jpg" class="food-img"></div>
+          <h2 class="food-title">Double Door Refrigerator </h2>
+          <span class="food-price">Rs.25000.00 INR</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+    
+        <div class="food-box">
+          <div class="pic"><img src="./wash2.jpeg" class="food-img"></div>
+          <h2 class="food-title">Front Load Washing Machine</h2>
+          <span class="food-price">Rs.35000.00 INR</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+    
+        <div class="food-box">
+          <div class="pic"><img src="./chimni.jpeg" class="food-img"></div>
+          <h2 class="food-title">kitchen chimney</h2>
+          <span class="food-price">Rs.9500.00 INR</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+    
+        <div class="food-box">
+          <div class="pic"><img src="./ac.webp" class="food-img"></div>
+          <h2 class="food-title">4 Star LG AC</h2>
+          <span class="food-price">Rs.39990.00 INR</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+    
+        <div class="food-box">
+          <div class="pic"><img src="./Coler2.jpeg" class="food-img"></div>
+          <h2 class="food-title">Air Cooler </h2>
+          <span class="food-price">Rs.6049.00 INR</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+    
+    
+        <div class="food-box">
+          <div class="pic"><img src="./curler.jpeg" class="food-img"></div>
+          <h2 class="food-title">PHILIPS 3 IN 1 STYLER</h2>
+          <span class="food-price">Rs.4999.00 INR</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+    
+    
+        <div class="food-box">
+          <div class="pic"><img src="./hair dryer.jpeg" class="food-img"></div>
+          <h2 class="food-title">Hair Dryer</h2>
+          <span class="food-price">Rs.2495 INR</span>
+          <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="food-box">
+            <div class="pic"><img src="./brush.jpg" class="food-img"></div>
+            <h2 class="food-title">Philips heated straightening brush</h2>
+            <span class="food-price">Rs.3000.00 INR</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="food-box">
+            <div class="pic"><img src="./heater.jpeg" class="food-img"></div>
+            <h2 class="food-title">Instant Water Heater</h2>
+            <span class="food-price">Rs.3100.00 INR</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="food-box">
+            <div class="pic"><img src="./dining table.jpeg" class="food-img"></div>
+            <h2 class="food-title">Wooden Dining Table Set</h2>
+            <span class="food-price">Rs.3100.00 INR</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="food-box">
+            <div class="pic"><img src="./home 2.webp" class="food-img"></div>
+            <h2 class="food-title">7 Tire Wooden Zig Zag</h2>
+            <span class="food-price">Rs.900.00 INR</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="food-box">
+            <div class="pic"><img src="./rice cookers.jpeg" class="food-img"></div>
+            <h2 class="food-title">Mini Rice Cooker</h2>
+            <span class="food-price">Rs.9500.00 INR</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="food-box">
+            <div class="pic"><img src="./induction cooker.webp" class="food-img"></div>
+            <h2 class="food-title">Induction Cooker</h2>
+            <span class="food-price">Rs.5000.00 INR</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="food-box">
+            <div class="pic"><img src="./cattle.jpeg" class="food-img"></div>
+            <h2 class="food-title">Electric Tea Kettle</h2>
+            <span class="food-price">Rs.1500.00 INR</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="food-box">
+            <div class="pic"><img src="./lapi table.webp" class="food-img"></div>
+            <h2 class="food-title">Wooden Laptop Folding Table</h2>
+            <span class="food-price">Rs.2000.00 INR</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="food-box">
+            <div class="pic"><img src="./mixer.jpeg" class="food-img"></div>
+            <h2 class="food-title">Mixer Grinder</h2>
+            <span class="food-price">Rs.2646.00 INR</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+    
+        <div class="food-box">
+            <div class="pic"><img src="./glam.webp" class="food-img"></div>
+            <h2 class="food-title">Matte Mac Cosmetic</h2>
+            <span class="food-price">Rs.5000.00 INR</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="food-box">
+            <div class="pic"><img src="./bed.webp" class="food-img"></div>
+            <h2 class="food-title">Royal Luxury King size Bed</h2>
+            <span class="food-price">Rs.55000.00 INR</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        <div class="food-box">
+            <div class="pic"><img src="./sony1.jpeg" class="food-img"></div>
+            <h2 class="food-title">Sony Bravia TV</h2>
+            <span class="food-price">Rs.59990.00 INR</span>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+      </div>
+    </div>
+    <script src="./pro.js"></script>
+  </body>
+  </html>
